@@ -78,7 +78,7 @@
                 <option value="Pontual">Pontual</option>
               </select>
 
-              <select class="form-select form-control mt-5" id="exames-complementares" name="exames-complementares[]" multiple aria-label="Exames complementares"> required
+              <select class="form-select form-control mt-5" id="exames-complementares" name="exames-complementares[]" multiple="multiple" aria-label="Exames complementares"> required
                 <option selected disabled>Escolha uma das opções abaixo</option>
                 <option value="Hemograma">Hemograma</option>
                 <option value="Glicemia">Glicemia</option>
