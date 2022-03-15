@@ -20,7 +20,7 @@
 
 
   <!-- Main jQuery -->
-  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- Single Page Nav -->
   <script src="js/jquery.singlePageNav.min.js"></script>
   <!-- Twitter Bootstrap -->

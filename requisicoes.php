@@ -32,42 +32,51 @@
           <h3 class="text-center">Faça a requisição do exame agora</h3>
           <form action="envio_requisicoes.php" method="POST">
 
-            <div class="input-group">
+            <div class="input-group" style="margin-bottom: 20px;">
+              <label for="email-empresa">Email</label>
               <input type="email" name="email-empresa" id="email-empresa" placeholder="Digite o email da empresa" class="form-control" required>
             </div>
 
-            <div class="input-group">
+            <div class="input-group" style="margin-bottom: 20px;">
               <div class="input-field">
+                <label for="CNPJouCAEPF">CNPJ / CAEPF</label>
                 <input type="text" name="CNPJouCAEPF" id="CNPJouCAEPF" placeholder="CNPJ da empresa ou CAEPF (Fazenda)" class="form-control" required minlength="12" maxlength="14">
               </div>
               <div class="input-field">
+                <label for="razao-social">Razao Social ou Nome Fazenda</label>
                 <input type="text" name="razao-social" id="razao-social" placeholder="Digite a razão social ou nome da fazenda" class="form-control" required>
               </div>
             </div>
 
             <div class="input-group" style="margin-bottom: 20px;">
               <div class="input-field">
+                <label for="nome-completo-colaborador">Nome Completo</label>
                 <input type="text" class="form-control" id="nome-completo-colaborador" name="nome-completo-colaborador" placeholder="Digite o nome completo do colaborador" required>
               </div>
               <div class="input-field">
+                <label for="CPF-colaborador">CPF</label>
                 <input type="text" class="form-control" id="CPF-colaborador" name="CPF-colaborador" placeholder="Digite o CPF do colaborador" required>
               </div>
             </div>
 
             <div class="input-group" style="margin-bottom: 20px;">
+              <label for="cargo-colaborador">Cargo</label>
               <input type="text" class="form-control" id="cargo-colaborador" name="cargo-colaborador" placeholder="Digite o cargo do colaborador" required>
             </div>
 
             <div class="input-group" style="margin-bottom: 20px;">
               <div class="input-field">
+                <label for="RG-colaborador">RG</label>
                 <input type="number" class="form-control" id="RG-colaborador" name="RG-colaborador" placeholder="Digite o RG do colaborador" required>
               </div>
               <div class="input-field">
-                <input type="date" class="form-control" id="data-nascimento-colaborador" name="data-nascimento-colaborador" placeholder="Digite a data de nascimento do colaborador" required>
+                <label for="data-nascimento-colaborador">Data de Nascimento</label>
+                <input type="date" class="form-control" id="data-nascimento-colaborador" name="data-nascimento-colaborador" required>
               </div>
             </div>
 
             <div class="input-group" style="margin-bottom: 20px;">
+              <label for="tipo-exame">Tipo de Exame</label>
               <select class="form-select form-control" aria-label="ASO" required id="tipo-exame" name="tipo-exame">
                 <option selected disabled>Escolha uma das opções de ASO abaixo</option>
                 <option value="Admissional">Admissional</option>
@@ -77,7 +86,10 @@
                 <option value="Periódico">Periódico</option>
                 <option value="Pontual">Pontual</option>
               </select>
+            </div>
 
+            <div class="input-group" style="margin-bottom: 20px;">
+              <label for="exames-complementares">Exames Complementares</label>
               <select class="form-select form-control mt-5" id="exames-complementares" name="exames-complementares[]" multiple="multiple" aria-label="Exames complementares"> required
                 <option selected disabled>Escolha uma das opções abaixo</option>
                 <option value="Hemograma">Hemograma</option>
@@ -100,7 +112,13 @@
                 <option value="Coprocultura">Coprocultura</option>
                 <option value="Brucelose (Teste)">Brucelose (Teste)</option>
                 <option value="TGO/TGP">TGO/TGP</option>
+                <option value="Outros">Outros</option>
               </select>
+            </div>
+
+            <div class="input-group" style="margin-bottom: 20px; display: none;" id="div-outros-exames">
+              <label for="outros-exames-complementares">Outros Exames Complementares</label>
+              <input type="text" class="form-control" id="outros-exames-complementares" name="outros-exames-complementares" placeholder="Digite outros exames não descritos acima">
             </div>
 
             <div class="input-group">
@@ -114,47 +132,59 @@
   </section>
 
   <?php
-    require './_part/footer.php';
+  require './_part/footer.php';
   ?>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+    // Máscara para CPF do colaborador
+    $('#CPF-colaborador').mask('000.000.000-00', {
+      reverse: true,
+      placeholder: '___.___.___-__'
+    });
 
-  // Máscara para CPF do colaborador
-  $('#CPF-colaborador').mask('000.000.000-00', {
-    reverse: true,
-    placeholder: '___.___.___-__'
-  });
+    // Máscara para CNPJ ou CAEPF
+    $('#CNPJouCAEPF').keydown(function() {
+      try {
+        $('#CNPJouCAEPF').unmask();
+      } catch (e) {}
 
-  // Másicara para CNPJ ou CAEPF
-  $('#CNPJouCAEPF').keydown(function() {
-    try {
-      $('#CNPJouCAEPF').unmask();
-    } catch (e) {}
+      var tamanho = $('#CNPJouCAEPF').val().length;
 
-    var tamanho = $('#CNPJouCAEPF').val().length;
+      if (tamanho < 12) {
+        $('#CNPJouCAEPF').mask('000.000.000/000-00', {
+          reverse: true
+        });
+      } else if (tamanho >= 14) {
+        $('#CNPJouCAEPF').mask('00.000.000/0000-00', {
+          reverse: true
+        });
+      }
 
-    if (tamanho < 12) {
-      $('#CNPJouCAEPF').mask('000.000.000/000-00', {
-        reverse: true
+      var elem = this;
+      setTimeout(function() {
+        // mudo a posição do seletor
+        elem.selectionStart = elem.selectionEnd = 10000;
+      }, 0);
+      // reaplico o valor para mudar o foco
+      var currentValue = $(this).val();
+      $(this).val('');
+      $(this).val(currentValue);
+    });
+
+    //Mostrar campo escondido
+
+    $(document).ready(function() {
+      $('#div-outros-exames').hide();
+      $('#exames-complementares').change(function() {
+        if ($('#exames-complementares').val() == 'Outros') {
+          $('#div-outros-exames').show();
+        } else {
+          $('#div-outros-exames').hide();
+        }
       });
-    } else if (tamanho >= 14) {
-      $('#CNPJouCAEPF').mask('00.000.000/0000-00', {
-        reverse: true
-      });
-    }
-
-    var elem = this;
-    setTimeout(function() {
-      // mudo a posição do seletor
-      elem.selectionStart = elem.selectionEnd = 10000;
-    }, 0);
-    // reaplico o valor para mudar o foco
-    var currentValue = $(this).val();
-    $(this).val('');
-    $(this).val(currentValue);
-  });
-</script>
+    });
+  </script>
 </body>
 
 </html>

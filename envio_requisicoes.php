@@ -33,7 +33,8 @@
                 .'<strong> RG: </strong>'. $_POST['RG-colaborador']. '<br><br>'
                 .'<strong> Data de Nascimento: </strong>'. date("d-m-Y", strtotime($_POST['data-nascimento-colaborador'])). '<br><br>'
                 .'<strong> Tipo do Exame a ser Realizado: </strong>'. $_POST['tipo-exame']. '<br><br>'
-                .'<strong> Exames Complementares: </strong>'. $examescomplementares;
+                .'<strong> Exames Complementares: </strong>'. $examescomplementares.'<br><br>'
+                .'<strong> Outros Exames Complementares: </strong>'. $_POST['outros-exames-complementares'];
 
   if($mail->send()){
     echo 'Requisição realizada com sucesso';
