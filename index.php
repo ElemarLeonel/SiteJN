@@ -10,8 +10,7 @@
 
 <!-- Meta Description -->
 <meta name="description" content="Página Principal da JN">
-<meta name="keywords"
-	content="Segurança, Trabalho, Saúde, Segurança do Trabalho, Saúde do Trabalho, Trabalhador, Eventos SST">
+<meta name="keywords" content="Segurança, Trabalho, Saúde, Segurança do Trabalho, Saúde do Trabalho, Trabalhador, Eventos SST">
 <meta name="author" content="Elemar Leonel">
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,7 +93,7 @@
 
 				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
 					<h2>Recursos</h2>
-					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+					<div class="devider"><i class="fa-solid fa-arrow-up-wide-short fa-lg"></i></div>
 				</div>
 
 				<!-- service item -->
@@ -390,7 +389,7 @@
 
 					<div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
 						<h2>Dados</h2>
-						<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+						<div class="devider"><i class="fa-solid fa-info fa-lg"></i></div>
 					</div>
 
 					<!-- first count item -->

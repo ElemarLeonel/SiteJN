@@ -14,6 +14,9 @@
   <!-- media-queries -->
   <link rel="stylesheet" href="css/media-queries.css">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/logotipo_jn.ico">
+
   <!-- Modernizer Script for old Browsers -->
   <script src="js/modernizr-2.6.2.min.js"></script>
 

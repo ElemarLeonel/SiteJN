@@ -33,8 +33,14 @@
           <form action="envio_requisicoes.php" method="POST">
 
             <div class="input-group" style="margin-bottom: 20px;">
-              <label for="email-empresa">Email</label>
-              <input type="email" name="email-empresa" id="email-empresa" placeholder="Digite o email da empresa" class="form-control" required>
+              <div class="input-field">
+                <label for="email-empresa">Email</label>
+                <input type="email" name="email-empresa" id="email-empresa" placeholder="Digite o email da empresa" class="form-control" required>
+              </div>
+              <div class="input-field">
+                <label for="telefone-empresa">Telefone</label>
+                <input type="email" name="telefone-empresa" id="telefone-empresa" placeholder="Digite um telefone para contato" class="form-control" required>
+              </div>
             </div>
 
             <div class="input-group" style="margin-bottom: 20px;">
@@ -91,7 +97,7 @@
             <div class="input-group" style="margin-bottom: 20px;">
               <label for="exames-complementares">Exames Complementares</label>
               <select class="form-select form-control mt-5" id="exames-complementares" name="exames-complementares[]" multiple="multiple" aria-label="Exames complementares"> required
-                <option selected disabled>Escolha uma das opções abaixo</option>
+                <option value="Sem Exames Complementares" selected>Sem Exames Complementares</option>
                 <option value="Hemograma">Hemograma</option>
                 <option value="Glicemia">Glicemia</option>
                 <option value="Fezes (EPF)">Fezes (EPF)</option>
@@ -122,7 +128,7 @@
             </div>
 
             <div class="input-group">
-              <input type="submit" id="form-submit" class="pull-right" value="Enviar Requisição" id="btnEnviar" name="btnEnviar">
+              <button type="submit" class="btn btn-success pull-right" id="btnEnviar" name="btnEnviar"> Enviar Requisição </button>
             </div>
 
           </form>
@@ -137,11 +143,15 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript">
+
     // Máscara para CPF do colaborador
     $('#CPF-colaborador').mask('000.000.000-00', {
       reverse: true,
       placeholder: '___.___.___-__'
     });
+
+    // Máscara para Telefone da empresa
+    $('#telefone-empresa').mask('(00) 00000-0000');
 
     // Máscara para CNPJ ou CAEPF
     $('#CNPJouCAEPF').keydown(function() {
@@ -177,11 +187,13 @@
     $(document).ready(function() {
       $('#div-outros-exames').hide();
       $('#exames-complementares').change(function() {
-        if ($('#exames-complementares').val() == 'Outros') {
+      $('#exames-complementares option:selected').each(function() {
+        if($(this).val() == "Outros"){
           $('#div-outros-exames').show();
         } else {
           $('#div-outros-exames').hide();
         }
+        });
       });
     });
   </script>

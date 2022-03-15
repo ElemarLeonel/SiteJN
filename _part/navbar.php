@@ -30,10 +30,10 @@
 			<nav class="collapse navbar-collapse navbar-right" role="navigation">
 				<ul id="nav" class="nav navbar-nav">
 					<li class="current"><a href="../index.php">Home</a></li>
-					<li><a href="">Recursos</a></li>
+					<li><a href="#features">Recursos</a></li>
 					<!--<li><a href="#works">Work</a></li>-->
 					<!--<li><a href="#team">Time</a></li>-->
-					<li><a href="../requisicoes.php">Requisições</a></li>
+					<li><a href="#facts">Dados</a></li>
 					<li><a href="#contact">Contato</a></li>
 				</ul>
 			</nav>
