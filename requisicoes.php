@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon -->
-  <link rel="icon" href="./img/faviconjn.png" sizes="32x32">
+  <link rel="shortcut icon" href="./img/faviconjn.ico" sizes="32x32">
 
 </head>
 

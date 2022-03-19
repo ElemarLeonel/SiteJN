@@ -5,8 +5,12 @@
 				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
 					<div class="footer-single">
 						<h3 style="margin-bottom: 10px;">JN Segurança e Saúde do Trabalho</h3>
-						<p>Somos uma empresa séria, atenciosa e responsável com nossos clientes e 
-							a nossa equipe doa o melhor de si para entregar tudo o que se compromete a realizar.</p>
+						<p>A JN foi criada no ano de 2013 para solucionar questões relacionadas
+						a Segurança do Trabalho e Saúde Ocupacional com propósito de
+						assessorar as empresas com dificuldade de atendimento aos requisitos
+						de órgãos fiscalizadores, legislação trabalhista e previdenciária e que
+						tenham interesse em melhorar seu gerenciamento neste segmento,
+						consequentemente promovendo o bem estar de todas as partes envolvidas.</p>
 					</div>
 				</div>
 
@@ -26,7 +30,7 @@
 						<h6>Saiba Mais</h6>
 						<ul>
 							<li><a href="#">Sobre Nós</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="./requisicoes.php">Requisições</a></li>
 							<li><a href="https://api.whatsapp.com/send?phone=5569984008182">WhatsApp</a></li>
 							<li><a href="https://api.whatsapp.com/send?phone=5569984858181">WhatsApp eSocial</a></li>
 						</ul>

@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Favicon -->
-<link rel="icon" href="./img/faviconjn.png" sizes="32x32">
+<link rel="shortcut icon" href="./img/faviconjn.ico" sizes="32x32">
 
 </head>
 
@@ -44,7 +44,7 @@
 			<div class="carousel-inner" role="listbox">
 
 				<!-- single slide -->
-				<div class="item active" style="background-image: url(img/segtrabalho2.jfif);">
+				<div class="item active" style="background-image: url(img/carousel/curso_empilhadeira_cairu.jpeg);">
 					<div class="carousel-caption" style="filter: blur(0px);">
 						<h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"
 						style="color: white;">Vamos<span>
@@ -61,7 +61,23 @@
 				<!-- end single slide -->
 
 				<!-- single slide -->
-				<div class="item" style="background-image: url(img/segtrabalho3.jpg);">
+				<div class="item" style="background-image: url(img/carousel/curso_primeirossocorros_piarara.jpg);">
+					<div class="carousel-caption">
+						<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Vamos<span>
+								JN</span>!</h2>
+						<h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/saúde</span> é a única definição</h3>
+						<p data-wow-duration="500ms" class="wow slideInRight animated"><strong>Temos uma equipe capacitada</strong></p>
+
+						<ul class="social-links text-center">
+							<li><a href=""><i class="fab fa-instagram fa-lg"></i></a></li>
+							<li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- end single slide -->
+
+				<!-- single slide -->
+				<div class="item" style="background-image: url(img/carousel/sala_tecnica_jn.jpeg);">
 					<div class="carousel-caption">
 						<h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Vamos<span>
 								JN</span>!</h2>
@@ -103,13 +119,14 @@
 				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
 					<div class="service-item">
 						<div class="service-icon">
-							<i class="fas fa-photo-video fa-2x"></i>
+							<i class="fa-solid fa-house-chimney-medical fa-2x"></i>
 						</div>
 
 						<div class="service-desc">
-							<h3>Treinamentos</h3>
-							<p>Temos diversos treinamentos na área da segurança do trabalho para os seus colaboradores.
-								Somos referência em treinamentos na região.
+							<h3>Segurança e Medicina do Trabalho</h3>
+							<p>A JN oferece assessoria completa em segurança e medicina do trabalho, com programas
+							específicos e abrangentes para a aplicação das Normas Regulamentadoras (NRs) exigidas pelo
+							Ministério do Trabalho e Emprego.
 							</p>
 						</div>
 					</div>
@@ -120,12 +137,15 @@
 				<div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
 					<div class="service-item">
 						<div class="service-icon">
-							<i class="fa fa-diagnoses fa-2x"></i>
+							<i class="fa-solid fa-gear fa-2x"></i>
 						</div>
 
 						<div class="service-desc">
-							<h3>Exames</h3>
-							<p>Realizamos exames de todos os tipos (periódicos, demissionais, admissionais, mudança de função/risco) para a sua empresa.</p>
+							<h3>Avaliações dos Riscos Ambientais</h3>
+							<p>A JN oferece serviços especializados para medições, visando avaliar as condições do ambiente de
+							trabalho em relação às características fisiológicas dos trabalhadores. O objetivo desse serviço é
+							garantir que as empresas atuem em conformidade com os níveis permitidos nas normas
+							regulamentadoras.</p>
 						</div>
 					</div>
 				</div>
@@ -135,12 +155,75 @@
 				<div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="service-item">
 						<div class="service-icon">
-							<i class="fa fa-paper-plane fa-2x"></i>
+							<i class="fa-solid fa-chalkboard-user fa-2x"></i>
 						</div>
 
 						<div class="service-desc">
-							<h3>Consultoria e Gestão de SST</h3>
-							<p>Fazemos consultoria e gestão de SST em tempos de envios de eventos para o eSocial.</p>
+							<h3>Treinamentos</h3>
+							<p>Uma das principais ferramentas em prevenção de acidentes e doenças relacionadas ao trabalho é o
+							treinamento. A JN Segurança e Saúde no Trabalho ciente disso prepara e ministra treinamentos
+							personalizados para cada empresa, considerando o seu ambiente ocupacional e os riscos
+							específicos de sua planta.</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+			</div>
+
+			<div class="row" style="margin-top: 3rem;">
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+					<div class="service-item">
+						<div class="service-icon">
+							<i class="fa-solid fa-heart fa-2x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>Exames Ocupacionais</h3>
+							<p>A JN possui consultórios equipados e uma infraestrutura totalmente apropriada para realização de
+							exames médicos e ocupacionais, oferecendo aos seus clientes uma completa avaliação biológica,
+							visando promover a saúde dos trabalhadores no ambiente de trabalho.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+					<div class="service-item">
+						<div class="service-icon">
+							<img src="./img/logotipo_esocial.png" alt="" width="30" height="30">
+						</div>
+
+						<div class="service-desc">
+							<h3>ESocial</h3>
+							<p>Possuímos sistema informatizado 100% em nuvem, que já está preparado para envio dos eventos
+							referentes à Comunicado de Acidente de Trabalho (S-2210), Monitoramento da Saúde do
+							Trabalhador (S-2220) e Condições Ambientais (S-2240).
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- end service item -->
+
+				<!-- service item -->
+				<div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+					<div class="service-item">
+						<div class="service-icon">
+							<i class="fa-solid fa-file-lines fa-2x"></i>
+						</div>
+
+						<div class="service-desc">
+							<h3>PGR/GRO</h3>
+							<p>O Programa de Gerenciamento de Riscos (PGR) e o Gerenciamento de Riscos Ocupacionais (GRO)
+							representa uma evolução do PPRA que deverá ser elaborado a partir de janeiro de 2022. A ideia é
+							ter um material de SST que realmente possa ser usado no dia a dia das empresas, com planos de
+							ação a serem cumpridas e adaptado aos mais modernos conceitos de gestão praticados no
+							mundo.
+							</p>
 						</div>
 					</div>
 				</div>

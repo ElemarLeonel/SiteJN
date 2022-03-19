@@ -162,17 +162,17 @@ body > section,
 }
 
 .navbar-nav li a {
-	border-top: 1px solid #00A859;
+	/* border-top: 1px solid #00A859; */
   color: #00A859;
 }
 
-.navbar-nav li a.current,
+/* .navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
-	/* background-color: #fff; */
+	background-color: #fff;
 	border-top: 1px solid #00A859;
-  /* color: #00A859; */
-}
+  color: #00A859;
+} */
 
 
 
@@ -499,7 +499,7 @@ body > section,
 ==========================================*/
 
 #facts {
-	background-image: url("../img/parallax/city.jpg");
+	background-image: url("../img/fachadajn.jpeg");
 	background-color: rgba(6,32,51,.8);
 	background-attachment: fixed !important;
 	background-position: center center;
