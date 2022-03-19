@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- meta charec set -->
+  <!-- Meta charset -->
   <meta charset="utf-8">
   <!-- Always force latest IE rendering engine or request Chrome Frame -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,22 +11,26 @@
   <title>JN - Fazer Requisições de Exames</title>
 
   <!-- Meta Description -->
-  <meta name="description" content="Página Principal da JN">
-  <meta name="keywords" content="Segurança, Trabalho, Saúde, Segurança do Trabalho, Saúde do Trabalho, Trabalhador, SST, Envio dos Eventos">
+  <meta name="description" content="Página de Requisições">
+  <!-- <meta name="keywords" content="Segurança, Trabalho, Saúde, Segurança do Trabalho, Saúde do Trabalho, Trabalhador, SST, Envio dos Eventos"> -->
   <meta name="author" content="Elemar Leonel">
 
   <!-- Mobile Specific Meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./img/faviconjn.png" sizes="32x32">
+
 </head>
 
 <body id="body">
   <?php
-  require './_part/links.php';
-  include './_part/navbar.php';
+    require './_part/links.php';
+    require './_part/navbar.php';
   ?>
 
   <section id="requisicoes" name="requisicoes">
-    <div class="container">
+    <div class="container-fluid">
       <div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
         <div class="contact-form">
           <h3 class="text-center">Faça a requisição do exame agora</h3>
@@ -39,7 +43,7 @@
               </div>
               <div class="input-field">
                 <label for="telefone-empresa">Telefone</label>
-                <input type="email" name="telefone-empresa" id="telefone-empresa" placeholder="Digite um telefone para contato" class="form-control" required>
+                <input type="text" name="telefone-empresa" id="telefone-empresa" placeholder="Digite um telefone para contato" class="form-control" required>
               </div>
             </div>
 
@@ -73,7 +77,7 @@
             <div class="input-group" style="margin-bottom: 20px;">
               <div class="input-field">
                 <label for="RG-colaborador">RG</label>
-                <input type="number" class="form-control" id="RG-colaborador" name="RG-colaborador" placeholder="Digite o RG do colaborador" required>
+                <input type="text" class="form-control" id="RG-colaborador" name="RG-colaborador" placeholder="Digite o RG do colaborador" required>
               </div>
               <div class="input-field">
                 <label for="data-nascimento-colaborador">Data de Nascimento</label>
@@ -138,7 +142,7 @@
   </section>
 
   <?php
-  require './_part/footer.php';
+    require './_part/footer.php';
   ?>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -183,7 +187,6 @@
     });
 
     //Mostrar campo escondido
-
     $(document).ready(function() {
       $('#div-outros-exames').hide();
       $('#exames-complementares').change(function() {

@@ -2,20 +2,22 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Fontawesome Icon font -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
   <!-- Twitter Bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <!-- jquery.fancybox  -->
   <link rel="stylesheet" href="css/jquery.fancybox.css">
+
   <!-- animate -->
   <link rel="stylesheet" href="css/animate.css">
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/main.css">
+
   <!-- media-queries -->
   <link rel="stylesheet" href="css/media-queries.css">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="../img/logotipo_jn.ico">
 
   <!-- Modernizer Script for old Browsers -->
   <script src="js/modernizr-2.6.2.min.js"></script>

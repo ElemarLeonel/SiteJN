@@ -18,9 +18,9 @@
 				<!-- /responsive nav button -->
 
 				<!-- logo -->
-				<a class="navbar-brand" href="#body">
+				<a class="navbar-brand" href="./index.php#body">
 					<h1 id="logo">
-						<img src="img/logotipojn.png" alt="JN" width="36" height="36">
+						<img src="img/logotipojn.png" alt="Logotipo da JN Saúde e Segurança do Trabalho" width="48" height="48">
 					</h1>
 				</a>
 				<!-- /logo -->
@@ -29,12 +29,12 @@
 			<!-- main nav -->
 			<nav class="collapse navbar-collapse navbar-right" role="navigation">
 				<ul id="nav" class="nav navbar-nav">
-					<li class="current"><a href="../index.php">Home</a></li>
-					<li><a href="#features">Recursos</a></li>
+					<li class="current"><a href="./index.php#slider"><strong>Home</strong></a></li>
+					<li><a href="./index.php#features"><strong>Recursos</strong></a></li>
 					<!--<li><a href="#works">Work</a></li>-->
 					<!--<li><a href="#team">Time</a></li>-->
-					<li><a href="#facts">Dados</a></li>
-					<li><a href="#contact">Contato</a></li>
+					<li><a href="./index.php#facts"><strong>Dados</strong></a></li>
+					<li><a href="./index.php#contact"><strong>Contato</strong></a></li>
 				</ul>
 			</nav>
 			<!-- /main nav -->

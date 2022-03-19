@@ -15,13 +15,16 @@
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Favicon -->
+<link rel="icon" href="./img/faviconjn.png" sizes="32x32">
+
 </head>
 
 <body id="body">
 
 	<?php
-		require './_part/links.php';
-		include_once './_part/navbar.php';
+		include './_part/links.php';
+		include './_part/navbar.php';
 	?>
 	<!--
         Home Slider

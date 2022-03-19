@@ -27,9 +27,9 @@ $(document).ready(function(){
 	
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
-            $("#navigation").css("background-color","#00A859");
+            $("#navigation").css("background-color","#FFF");
         } else {
-            $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
+            $("#navigation").css("background-color","#FFF");
         }
     });
 	
@@ -53,20 +53,20 @@ $(document).ready(function(){
 	
     // portfolio filtering
 
-    $(".project-wrapper").mixItUp();
+    // $(".project-wrapper").mixItUp();
 	
 	
-	$(".fancybox").fancybox({
-		padding: 0,
+	// $(".fancybox").fancybox({
+	// 	padding: 0,
 
-		openEffect : 'elastic',
-		openSpeed  : 650,
+	// 	openEffect : 'elastic',
+	// 	openSpeed  : 650,
 
-		closeEffect : 'elastic',
-		closeSpeed  : 550,
+	// 	closeEffect : 'elastic',
+	// 	closeSpeed  : 550,
 
-		closeClick : true,
-	});
+	// 	closeClick : true,
+	// });
 	
 	/* ========================================================================= */
 	/*	Parallax
@@ -114,21 +114,21 @@ $(document).ready(function(){
 
 // ==========  START GOOGLE MAP ========== //
 function initialize() {
-    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+    // var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
 
-    var mapOptions = {
-        zoom: 14,
-        center: myLatLng,
-        disableDefaultUI: true,
-        scrollwheel: false,
-        navigationControl: false,
-        mapTypeControl: false,
-        scaleControl: false,
-        draggable: false,
-        mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
-        }
-    };
+    // var mapOptions = {
+    //     zoom: 14,
+    //     center: myLatLng,
+    //     disableDefaultUI: true,
+    //     scrollwheel: false,
+    //     navigationControl: false,
+    //     mapTypeControl: false,
+    //     scaleControl: false,
+    //     draggable: false,
+    //     mapTypeControlOptions: {
+    //         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'roadatlas']
+    //     }
+    // };
 
     //var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
 
