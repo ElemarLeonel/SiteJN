@@ -142,7 +142,7 @@ body > section,
 
 #navigation {
   background-color: #FFF;
-  border: 0 none;
+  border: 100 none;
   box-shadow: 0 0 0.3em #02A13B;
   margin: 0;
 
@@ -153,7 +153,7 @@ body > section,
 			transition: background-color 800ms linear; */
 }
 
-.navbar-toggle i {
+button .icon-menu {
 	color: #00A859;
 }
 
@@ -166,13 +166,14 @@ body > section,
   color: #00A859;
 }
 
-/* .navbar-nav li a.current,
+
+.navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
 	background-color: #fff;
-	border-top: 1px solid #00A859;
-  color: #00A859;
-} */
+	/* border-top: 1px solid #00A859; */
+  color: #12e080;
+}
 
 
 
@@ -478,7 +479,7 @@ body > section,
 }
 
 .team-member:hover h4 {
-  color: #0eb493;
+  color: #00A859;
 }
 
 .team-member .social-links {

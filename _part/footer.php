@@ -29,9 +29,9 @@
 					<div class="footer-single">
 						<h6>Saiba Mais</h6>
 						<ul>
-							<li><a href="#">Sobre Nós</a></li>
-							<li><a href="./requisicoes.php">Requisições</a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=5569984008182">WhatsApp</a></li>
+							<li><a href="./requisicoes.php">Requisições de Exames Ocupacionais</a></li>
+							<li><a href="./cat.php">Abertura de CAT</a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=5569984008182">WhatsApp Recepção</a></li>
 							<li><a href="https://api.whatsapp.com/send?phone=5569984858181">WhatsApp eSocial</a></li>
 						</ul>
 					</div>
@@ -41,8 +41,7 @@
 					<div class="footer-single">
 						<h6>Nossas Redes Sociais</h6>
 						<ul>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Instagram</a></li>
+							<li><a href="https://www.instagram.com/jn_sst_/">Instagram</a></li>
 						</ul>
 					</div>
 				</div>

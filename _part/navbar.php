@@ -7,41 +7,41 @@
 	<!-- 
         Fixed Navigation
         ==================================== -->
-	<header id="navigation" class="navbar-fixed-top navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<!-- responsive nav button -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<i class="fa fa-bars fa-2x"></i>
-				</button>
-				<!-- /responsive nav button -->
+ <!-- <header id="navigation" class="navbar-fixed-top navbar"> -->
+		<div class="container-fluid">
 
-				<!-- logo -->
-				<a class="navbar-brand" href="./index.php#body">
-					<h1 id="logo">
-						<img src="img/logotipojn.png" alt="Logotipo da JN Saúde e Segurança do Trabalho" width="48" height="48">
-					</h1>
-				</a>
-				<!-- /logo -->
-			</div>
-
-			<!-- main nav -->
-			<nav class="collapse navbar-collapse navbar-right" role="navigation">
-				<ul id="nav" class="nav navbar-nav">
-					<li class="current"><a href="./index.php#slider"><strong>Home</strong></a></li>
-					<li><a href="./index.php#features"><strong>Recursos</strong></a></li>
-					<!--<li><a href="#works">Work</a></li>-->
-					<!--<li><a href="#team">Time</a></li>-->
-					<li><a href="./index.php#facts"><strong>Dados</strong></a></li>
-					<li><a href="./index.php#contact"><strong>Contato</strong></a></li>
-				</ul>
-			</nav>
-			<!-- /main nav -->
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#home">
+							<img src="img/logotipojn.png" alt="Logotipo da JN Saúde e Segurança do Trabalho" width="48" height="48">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa-solid fa-bars icon-menu"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<strong><a class="nav-link active" aria-current="page" href="#">Home</a></strong>
+								</li>
+								<li class="nav-item">
+									<strong><a class="nav-link" href="./index.php#features">Recursos</a></strong>
+								</li>
+								<li class="nav-item">
+									<strong><a class="nav-link" href="./index.php#team">Equipe</a></strong>
+								</li>
+								<li class="nav-item">
+									<strong><a class="nav-link" href="./index.php#facts">Dados</a></strong>
+								</li>
+								<li class="nav-item">
+									<strong><a class="nav-link" href="./index.php#contact">Contato</a></strong>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 
 		</div>
-	</header>
+ <!-- </header> -->
 	<!--
         End Fixed Navigation
         ==================================== -->
-
