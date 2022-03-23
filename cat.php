@@ -83,7 +83,7 @@
                                 </div>
                                 <div class="input-field">
                                     <label for="upload-ficha-registro">Ficha de Registro (atualizada)*</label>
-                                    <input type="file" class="form-control" id="upload-ficha-registro" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    <input type="file" class="form-control" id="upload-ficha-registro" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required accept="application/pdf">
                                 </div>
                             </div>
                         </fieldset>
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="input-field">
                                     <label for="upload-atestado-medico">Atestado Médico*</label>
-                                    <input type="file" class="form-control" id="upload-atestado-medico" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                                    <input type="file" class="form-control" id="upload-atestado-medico" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required multiple accept="image/*, application/pdf">
                                 </div>
                             </div>
                         </fieldset>
@@ -178,18 +178,18 @@
                             <div class="input-group">
                                 <div class="input-field form-check form-switch">
                                     <label class="form-check-label" for="houve-obito">Houve óbito?</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="houve-obito">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="houve-obito" name="houve-obito">
                                 </div>
                                 <div class="input-field">
-                                    <label for="quantidade-horas-trabalhadas">Data do Óbito</label>
+                                    <label for="data-obito" id="data-obito-label">Data do Óbito</label>
                                     <input type="date" name="data-obito" id="data-obito" class="form-control">
                                 </div>
                             </div>
 
                             <div class="input-group">
                                 <div class="input-field">
-                                    <label for="tipo-ambiente">Tipo do Ambiente</label>
-                                    <select class="form-select form-control" aria-label="ASO" required id="tipo-ambiente" name="tipo-exame">
+                                    <label for="tipo-ambiente">Tipo do Ambiente*</label>
+                                    <select class="form-select form-control" aria-label="ASO" required id="tipo-ambiente" name="tipo-ambiente">
                                         <option selected disabled>Ambiente do acidente</option>
                                         <option value="Estabelecimento do empregador">Estabelecimento do empregador</option>
                                         <option value="Estabelecimento de terceiros">Estabelecimento de terceiros</option>
@@ -211,18 +211,30 @@
                                     <input type="text" name="cep" id="cep" placeholder="Digite o CEP do local" class="form-control" required>
                                 </div>
                                 <div class="input-field">
-                                    <label for="cidade">Cidade</label>
+                                    <label for="cidade">Cidade*</label>
                                     <input type="text" name="cidade" id="cidade" class="form-control" required data-autocomplete-city>
                                 </div>
                             </div>
+
                             <div class="input-group">
                                 <div class="input-field">
                                     <label for="bairro">Bairro*</label>
                                     <input type="text" name="bairro" id="bairro" class="form-control" required data-autocomplete-neighborhood>
                                 </div>
                                 <div class="input-field">
-                                    <label for="logradouro">Logradouro</label>
+                                    <label for="logradouro">Logradouro*</label>
                                     <input type="text" name="logradouro" id="logradouro" class="form-control" required data-autocomplete-address>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-field">
+                                    <label for="numero">Número</label>
+                                    <input type="text" name="numero" id="numero" class="form-control">
+                                </div>
+                                <div class="input-field">
+                                    <label for="complemento">Complemento</label>
+                                    <input type="text" name="complemento" id="complemento" class="form-control">
                                 </div>
                             </div>
                         </fieldset>
@@ -289,6 +301,19 @@
         // Via CEP
         $('#cep').mask('00000-000');
         $('#cep').autocompleteAddress();
+
+        // Campo Oculto
+        $('#data-obito').hide();
+        $('#data-obito-label').hide();
+        $('#houve-obito').click(function(){
+            if($('#houve-obito').is(':checked')){
+                $('#data-obito').show();
+                $('#data-obito-label').show();
+            } else {
+                $('#data-obito').hide();
+                $('#data-obito-label').hide();
+            }
+        })
     </script>
 
 </body>

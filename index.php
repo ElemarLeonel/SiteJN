@@ -794,7 +794,8 @@
 							<div class="input-group" style="margin-top: 15px;">
 								<textarea name="message" id="message" placeholder="Digite a sua mensagem..." class="form-control" rows="5"></textarea>
 							</div>
-							<div class="input-group">
+							<button type="button" class="btn btn-outline-success">Gerar PDF</button>
+							<div class="input-group d-flex justify-content-end">
 								<input type="submit" id="form-submit" class="pull-right" value="Enviar Mensagem">
 							</div>
 						</form>
