@@ -39,6 +39,10 @@
     fieldset #div-outros-exames {
       display: none;
     }
+    
+    #gerarPDF{
+      margin-right: 1.5rem;
+    }
   </style>
 
 </head>
@@ -54,7 +58,7 @@
       <div class="col-lg-12 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
         <div class="contact-form">
           <h3 class="text-center">Faça a requisição do exame agora</h3>
-          <form action="envio_requisicoes.php" method="POST">
+          <form action="envio_e_gerar_pdf_req.php" method="POST">
 
             <fieldset class="fieldset-form">
               <legend class="legend-fieldset-form">Dados da Empresa</legend>
@@ -134,7 +138,7 @@
               <div class="input-group">
                 <div class="input-field w-100">
                   <label for="exames-complementares">Exames Complementares</label>
-                  <select class="form-select form-control mt-5" id="exames-complementares" name="exames-complementares[]" multiple="multiple" aria-label="Exames complementares" required>
+                  <select class="form-select form-control mt-2" id="exames-complementares" name="exames-complementares[]" multiple="multiple" aria-label="Exames complementares" required>
                     <option value="Sem Exames Complementares" selected>Sem Exames Complementares</option>
                     <option value="Hemograma">Hemograma</option>
                     <option value="Glicemia">Glicemia</option>
@@ -164,14 +168,17 @@
               <div class="input-group" id="div-outros-exames">
                 <div class="input-field w-100">
                   <label for="outros-exames-complementares">Outros Exames Complementares</label>
-                  <input type="text" class="form-control" id="outros-exames-complementares" name="outros-exames-complementares" placeholder="Digite outros exames não descritos acima">
+                  <input type="text" class="form-control" id="outros-exames-complementares" name="outros-exames-complementares" 
+                  placeholder="Digite outros exames não descritos acima">
                 </div>
               </div>
             </fieldset>
 
-            <div class="input-group d-flex justify-content-between">
-              <input type="submit" class="btn btn-outline-primary mr-2" id="gerarPDF" name="btnGerarPDF" value="Gerar PDF">
-              <input type="submit" class="pull-right" id="form-submit" name="btnEnviar" value="Enviar Requisição">  
+            <div class="input-group d-flex justify-content-end">
+              <input type="submit" class="btn btn-outline-primary" id="gerarPDF" name="btnGerarPDF" 
+              value="Gerar PDF">
+              <input type="submit" class="pull-right" id="form-submit" name="btnEnviar" 
+              value="Enviar Requisição">  
             </div>
 
           </form>
