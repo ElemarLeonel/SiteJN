@@ -19,7 +19,7 @@
 						<h6>Inscreva-se </h6>
 						<form action="#" class="subscribe">
 							<input type="text" name="subscribe" id="subscribe">
-							<input type="submit" value="&#8594;" id="subs">
+							<input type="submit" value="&#8594;" id="subs" style="color: white;">
 						</form>
 						<p>Aqui você fica por dentro de todas as novidades que estão acontecendo na área de SST.</p>
 					</div>

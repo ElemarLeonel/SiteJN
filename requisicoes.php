@@ -170,8 +170,8 @@
             </fieldset>
 
             <div class="input-group d-flex justify-content-between">
-              <input type="button" class="btn btn-outline-primary mr-2" id="gerarPDF" name="btnGerarPDF" value="Gerar PDF">
-              <input type="submit" class="pull-right" id="form-submit" name="btnEnviar" value="Enviar Requisição">
+              <input type="submit" class="btn btn-outline-primary mr-2" id="gerarPDF" name="btnGerarPDF" value="Gerar PDF">
+              <input type="submit" class="pull-right" id="form-submit" name="btnEnviar" value="Enviar Requisição">  
             </div>
 
           </form>

@@ -237,6 +237,14 @@
                                     <input type="text" name="complemento" id="complemento" class="form-control">
                                 </div>
                             </div>
+
+                            <div class="input-group">
+                                <div class="input-field w-100">
+                                    <label for="descricao-acidente">Descrição do Acidente*</label>
+                                    <textarea class="form-control" name="descricao-acidente" id="descricao-acidente" cols="30" rows="10" 
+                                    placeholder="Descreva sobre o acidente com detalhes e quais foram as partes atingidas" required></textarea>
+                                </div>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
@@ -308,7 +316,7 @@
         $('#houve-obito').click(function(){
             if($('#houve-obito').is(':checked')){
                 $('#data-obito').show();
-                $('#data-obito-label').show();
+                $('#data-obito-label').show().attr("required", "req");
             } else {
                 $('#data-obito').hide();
                 $('#data-obito-label').hide();
