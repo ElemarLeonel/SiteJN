@@ -51,7 +51,7 @@
             data-wow-duration="500ms" data-wow-delay="300ms">
                 <div class="contact-form">
                     <h3 class="text-center">Faça a solicitação para abertura da CAT (S-2210)</h3>
-                    <form action="envio_cat.php" method="POST">
+                    <form action="envio_cat.php" method="POST" enctype="multipart/form-data">
 
                         <fieldset class="fieldset-form">
                             <legend class="legend-fieldset-form">Dados da Empresa e Colaborador</legend>
@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="input-field">
                                     <label for="upload-ficha-registro">Ficha de Registro (atualizada)*</label>
-                                    <input type="file" class="form-control" name="upload-ficha-registro" 
+                                    <input type="file" class="form-control" name="upload-ficha-registro[]" 
                                     id="upload-ficha-registro" aria-describedby="inputGroupFileAddon04" 
                                     aria-label="Upload" required accept="image/*, application/pdf">
                                 </div>
@@ -128,13 +128,13 @@
                                 <div class="input-field form-check form-switch">
                                     <label class="form-check-label" for="houve-internacao">Houve internação?</label>
                                     <input class="form-check-input" type="checkbox" role="switch" id="houve-internacao" 
-                                    name="houve-internacao">
+                                    name="houve-internacao[]">
                                 </div>
                                 <div class="input-field">
                                     <label for="upload-atestado-medico">Atestado Médico*</label>
                                     <input type="file" class="form-control" id="upload-atestado-medico" 
                                     aria-describedby="inputGroupFileAddon04" aria-label="Upload" required multiple 
-                                    accept="image/*, application/pdf" name="upload-atestado-medico">
+                                    accept="image/*, application/pdf" name="upload-atestado-medico[]">
                                 </div>
                             </div>
                         </fieldset>
