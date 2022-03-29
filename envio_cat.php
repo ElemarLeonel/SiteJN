@@ -30,7 +30,8 @@ if(isset($_POST['btnEnviar'])){
     $cid = $_POST['cid'];
     $horaAtendimento = $_POST['hora-atendimento'];
     $quantidadeDiasTratamento = $_POST['quantidade-dias-tratamento'];
-    $houveInternacao = isset($_POST['houve-internacao']) ? $_POST['houve-internacao'] : null;
+    $houveInternacao = $_POST['houve-internacao'] === true ? 'Sim' : 'Não';
+    
 
     if(isset($_FILES['upload-atestado-medico'])){
         $uploadAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
@@ -77,7 +78,7 @@ if(isset($_POST['btnEnviar'])){
 
         
         $mail->setFrom($emailEmpresa, $razaoSocial);
-        $mail->addAddress('jn.e-social@hotmail.com', 'JN');
+        $mail->addAddress('jn.e-social@hotmail.com', 'JN - eSocial');
 
         $mail->addAttachment($dir. $uploadFichaRegistro);
 
@@ -87,13 +88,21 @@ if(isset($_POST['btnEnviar'])){
         }
 
         $mail->isHTML(true);
-        $mail->Subject = 'CAT para envio da '. $razaoSocial;
+        $mail->Subject = 'CAT para envio da '. $razaoSocial . ' ('. $CNPJouCAEPF. ')';
 
-        $mail->Body = '';
+        $mail->Body = '<br> Você recebeu uma CAT da '. $razaoSocial . ' para ser enviado. Confira os dados: <br><br>'
+                    .'<b> Número de protocolo: </b>'. $numeroProtocolo . '<br>'
+                    .'<b> Nome Completo do Colaborador: </b>'. $nomeCompletoColaborador. '<br>'
+                    .'<h3> Dados do Atestado Médico </h3><br>'
+                    .'<b> Data do Atestado: </b>'. $dataAtestado . '<br>'
+                    .'<b> CID: </b>'. $cid . '<br>'
+                    .'<b> Hora do Atendimento: </b>'. $horaAtendimento . '<br>'
+                    .'<b> Quantidade de Dias de Tratamento: </b>'. $quantidadeDiasTratamento . '<br>'
+                    .'<b> Houve internação?: </b>'. $houveInternacao . '<br>';
 
         $mail->send();
-        echo "<script> alert('Requisição realizada com sucesso.\\nGuarde seu número de protocolo: '+ $numeroprotocolo); </script>";
-        echo "<script> window.location = './cat.php'; </script>";
+        //echo "<script> alert('Requisição realizada com sucesso.\\nGuarde seu número de protocolo: '+ $numeroprotocolo); </script>";
+        //echo "<script> window.location = './cat.php'; </script>";
 
     } catch (Exception $e){
         echo $e->getMessage();

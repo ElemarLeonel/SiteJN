@@ -41,7 +41,7 @@
       $mail->SMTPAuth   = true;                                   
       $mail->Username   = 'f22aac41a4eb5e';                     
       $mail->Password   = '1a8e903de3b066';
-      $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;                                   
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                                   
       $mail->Port       = 2525;
 
       
@@ -50,16 +50,17 @@
 
       $mail->isHTML(true);
       $mail->Subject = 'Exame '. $tipoExame. ' da '.$razaosocial. ' ('. $CNPJouCAEPF. ')';
+      
       $mail->Body = 'Você recebeu um exame '. $tipoExame. ' da '.$razaoSocial. '. Confira aqui os dados: <br><br>'
-                    .'<strong> Número da protocolo: </strong>'. $numeroProtocolo . '<br><br>'
-                    .'<strong> Nome Completo do Colaborador: </strong>'. $nomeCompletoColaborador. '<br><br>'
-                    .'<strong> CPF: </strong>'. $CPFColaborador. '<br><br>'
-                    .'<strong> Cargo: </strong>'. $cargoColaborador. '<br><br>'
-                    .'<strong> RG: </strong>'. $RGColaborador. '<br><br>'
-                    .'<strong> Data de Nascimento: </strong>'. $dataNascimentoColaborador. '<br><br>'
-                    .'<strong> Tipo do Exame a ser Realizado: </strong>'. $tipoExame. '<br><br>'
-                    .'<strong> Exames Complementares: </strong>'. $examesComplementares.'<br><br>'
-                    .'<strong> Outros Exames Complementares: </strong>'. $outrosExamesComplementares;
+                    .'<b> Número da protocolo: </b>'. $numeroProtocolo . '<br><br>'
+                    .'<b> Nome Completo do Colaborador: </b>'. $nomeCompletoColaborador. '<br><br>'
+                    .'<b> CPF: </b>'. $CPFColaborador. '<br><br>'
+                    .'<b> Cargo: </b>'. $cargoColaborador. '<br><br>'
+                    .'<b> RG: </b>'. $RGColaborador. '<br><br>'
+                    .'<b> Data de Nascimento: </b>'. $dataNascimentoColaborador. '<br><br>'
+                    .'<b> Tipo do Exame a ser Realizado: </b>'. $tipoExame. '<br><br>'
+                    .'<b> Exames Complementares: </b>'. $examesComplementares.'<br><br>'
+                    .'<b> Outros Exames Complementares: </b>'. $outrosExamesComplementares;
 
       // Envio do email
       $mail->send();

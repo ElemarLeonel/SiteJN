@@ -345,7 +345,16 @@
         $('#cep').mask('00000-000');
         $('#cep').autocompleteAddress();
 
-        // Campo Oculto
+        // //Campo Houve Internação
+        // $('#houve-internacao').change(function(){
+        //     if($('houve-internacao').is(':checked') == true){
+        //         $('houve-internacao').val('Sim');
+        //     } else {
+        //         $('houve-internacao').val('Não');
+        //     }
+        // })
+
+        // Campo Data Óbito Oculto
         $('#data-obito').hide();
         $('#data-obito-label').hide();
         $('#houve-obito').click(function() {
