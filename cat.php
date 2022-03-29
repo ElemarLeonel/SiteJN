@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="input-field">
                                     <label for="upload-ficha-registro">Ficha de Registro (atualizada)*</label>
-                                    <input type="file" class="form-control" name="upload-ficha-registro[]" 
+                                    <input type="file" class="form-control" name="upload-ficha-registro" 
                                     id="upload-ficha-registro" aria-describedby="inputGroupFileAddon04" 
                                     aria-label="Upload" required accept="image/*, application/pdf">
                                 </div>

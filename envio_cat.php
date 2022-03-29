@@ -10,7 +10,7 @@ $mail = new PHPMailer(true);
 
 if(isset($_POST['btnEnviar'])){
 
-    $dir = 'upload/';
+    $dir = 'uploads/';
     // Dados da empresa e do colaborador
     $razaoSocial = $_POST['razao-social'];
     $CNPJouCAEPF = $_POST['CNPJouCAEPF'];
@@ -18,9 +18,11 @@ if(isset($_POST['btnEnviar'])){
     $telefoneEmpresa = $_POST['telefone-empresa'];
     $nomeCompletoColaborador = $_POST['nome-completo-colaborador'];
 
-    $fichaRegistroColaborador = $_FILES['upload-ficha-registro']['tmp_name'];
-    $nomeArquivoFichaRegistro = $_FILES['upload-ficha-registro']['name'];
-    $arquivoAnexadoFichaRegistro = move_uploaded_file($fichaRegistroColaborador, $dir. $nomeArquivoFichaRegistro);
+    if(isset($_FILES['upload-ficha-registro'])){
+        $uploadFichaRegistro = $_FILES['upload-ficha-registro']['name'];
+        $atestadosMedicos = $_FILES['upload-atestado-medico']['tmp_name'];
+        move_uploaded_file($_FILES['upload-ficha-registro']['tmp_name'], $dir.$uploadFichaRegistro);
+    }
 
 
     // Dados do Atestado
@@ -30,9 +32,10 @@ if(isset($_POST['btnEnviar'])){
     $quantidadeDiasTratamento = $_POST['quantidade-dias-tratamento'];
     $houveInternacao = isset($_POST['houve-internacao']) ? $_POST['houve-internacao'] : null;
 
-    $atestadoMedico = $_FILES['upload-atestado-medico']['tmp_name'];
-    $nomeArquivoAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
-    $arquivoAtestadoMedico = move_uploaded_file($atestadoMedico, $dir.$nomeArquivoAtestadoMedico);
+    if(isset($_FILES['upload-atestado-medico'])){
+        $uploadAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
+        move_uploaded_file(implode("", $_FILES['upload-atestado-medico']['tmp_name']), $dir.$uploadAtestadoMedico);
+    }
 
     // Dados do Médico
     $nomeMedico = $_POST['nome-medico'];
@@ -69,23 +72,28 @@ if(isset($_POST['btnEnviar'])){
         $mail->SMTPAuth   = true;                                   
         $mail->Username   = '9dec5ba2f4e1c4';                     
         $mail->Password   = '96250c105ec055';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;                               
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                               
         $mail->Port       = 2525;
 
         
         $mail->setFrom($emailEmpresa, $razaoSocial);
         $mail->addAddress('jn.e-social@hotmail.com', 'JN');
 
-        $mail->addAttachment($dir. $nomeArquivoFichaRegistro && $dir.$nomeArquivoAtestadoMedico);
+        $mail->addAttachment($dir. $uploadFichaRegistro);
+
+        $totalAtestadosMedicos = count($_FILES['upload-atestado-medico']['tmp_name']);
+        for($i = 0; $i < $totalAtestadosMedicos; $i++){
+            $mail->addAttachment($atestadosMedicos[$i], $uploadAtestadoMedico[$i]);
+        }
 
         $mail->isHTML(true);
         $mail->Subject = 'CAT para envio da '. $razaoSocial;
 
-        $mail->Body = 'Teste';
+        $mail->Body = '';
 
         $mail->send();
         echo "<script> alert('Requisição realizada com sucesso.\\nGuarde seu número de protocolo: '+ $numeroprotocolo); </script>";
-        echo "<script> window.location = './requisicoes.php'; </script>";
+        echo "<script> window.location = './cat.php'; </script>";
 
     } catch (Exception $e){
         echo $e->getMessage();
