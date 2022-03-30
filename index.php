@@ -19,7 +19,7 @@
 <link rel="shortcut icon" href="./img/faviconjn.ico" sizes="32x32">
 
 <style>
-	.image-carousel{
+	.image-carousel {
 		filter: brightness(0.4);
 	}
 </style>
@@ -51,27 +51,31 @@
 				<div class="carousel-item active">
 					<img src="img/carousel/curso_empilhadeira_cairu.jpeg" class="d-block w-100 image-carousel" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"
-						style="color: white;">First slide label</h5>
-						<p data-wow-duration="1000ms" class="wow slideInLeft animated">Some representative placeholder content for the first slide.</p>
+						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Treinamento de Operador de Empilhadeira</h5>
+						<p data-wow-duration="1000ms" class="wow slideInLeft animated">
+							Esta é uma foto da aplicação de um treinamento de Operador de Empilhadeira aplicado
+							na empresa Cairu Indústria de Bicicletas.
+						</p>
 					</div>
 				</div>
 
 				<div class="carousel-item">
 					<img src="img/carousel/curso_primeirossocorros_piarara.jpg" class="d-block w-100 image-carousel" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"
-						style="color: white;">Second slide label</h5>
-						<p data-wow-duration="1000ms" class="wow slideInLeft animated">Some representative placeholder content for the second slide.</p>
+						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Treinamento de Primeiros Socorros</h5>
+						<p data-wow-duration="1000ms" class="wow slideInLeft animated">
+							Esta é uma foto de um treinamento de Primeiros Socorros realizado na Piarara Indústria de Alimentos.
+						</p>
 					</div>
 				</div>
 
 				<div class="carousel-item">
 					<img src="img/carousel/sala_tecnica_jn.jpeg" class="d-block w-100 image-carousel" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"
-						style="color: white;">Third slide label</h5>
-						<p data-wow-duration="1000ms" class="wow slideInLeft animated">Some representative placeholder content for the third slide.</p>
+						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Sala Equipe Técnica JN</h5>
+						<p data-wow-duration="1000ms" class="wow slideInLeft animated">
+							Aqui está um dos ambientes da sala técnica da JN.
+						</p>
 					</div>
 				</div>
 
@@ -81,7 +85,7 @@
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Previous</span>
 			</button>
-			
+
 			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Next</span>
@@ -395,7 +399,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
 					<div class="member-thumb">
-						<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/odair.jpg" alt="Team Member" class="img-responsive mw-100 mh-100">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -433,7 +437,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/cleiso.jpg" alt="Team Member" class="img-responsive mw-100 mh-100">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -445,7 +449,7 @@
 						</figcaption>
 					</div>
 					<h4>Cleiso Rafael</h4>
-					<span>Função a colocar</span>
+					<span>Eng. de Segurança do Trabalho</span>
 				</figure>
 				<!-- end single member -->
 			</div>
@@ -454,7 +458,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/elemar.jpg" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -466,14 +470,14 @@
 						</figcaption>
 					</div>
 					<h4>Elemar Leonel</h4>
-					<span>Função a colocar</span>
+					<span>Téc. em Informática</span>
 				</figure>
 				<!-- end single member -->
 
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/jonathan.jpg" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -485,7 +489,7 @@
 						</figcaption>
 					</div>
 					<h4>Jonathan Alves</h4>
-					<span>Função a colocar</span>
+					<span>Eng. de Segurança do Trabalho</span>
 				</figure>
 				<!-- end single member -->
 
@@ -503,32 +507,11 @@
 							</ul>
 						</figcaption>
 					</div>
-					<h4>Valéria Valentin</h4>
-					<span>Função a colocar</span>
-				</figure>
-				<!-- end single member -->
-
-				<!-- single member -->
-				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-					<div class="member-thumb">
-						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-						<figcaption class="overlay">
-							<h5>voluptatem quia voluptas </h5>
-							<p>sit aspernatur aut odit aut fugit,</p>
-							<ul class="social-links text-center">
-								<li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-								<li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-								<li><a href=""><i class="fa-brands fa-google fa-lg"></i></a></li>
-							</ul>
-						</figcaption>
-					</div>
 					<h4>Flávia Medeiros</h4>
-					<span>Função a colocar</span>
+					<span>Téc. de Segurança do Trabalho</span>
 				</figure>
 				<!-- end single member -->
-			</div>
 
-			<div class="row" style="margin-top: 2.5rem;">
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
@@ -544,7 +527,28 @@
 						</figcaption>
 					</div>
 					<h4>Jardel Gomes</h4>
-					<span>Função a colocar</span>
+					<span>Téc. de Segurança do Trabalho</span>
+				</figure>
+				<!-- end single member -->
+			</div>
+
+			<div class="row" style="margin-top: 2.5rem;">
+				<!-- single member -->
+				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+					<div class="member-thumb">
+						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>voluptatem quia voluptas </h5>
+							<p>sit aspernatur aut odit aut fugit,</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+								<li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa-brands fa-google fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Marcélia Kalke</h4>
+					<span>Téc. de Segurança do Trabalho</span>
 				</figure>
 				<!-- end single member -->
 
@@ -562,15 +566,15 @@
 							</ul>
 						</figcaption>
 					</div>
-					<h4>Marcélia Kalke</h4>
-					<span>Função a colocar</span>
+					<h4>Sônia Lagácio</h4>
+					<span>Téc. em Enfermagem</span>
 				</figure>
 				<!-- end single member -->
 
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -581,8 +585,8 @@
 							</ul>
 						</figcaption>
 					</div>
-					<h4>Sônia Lagácio</h4>
-					<span>Função a colocar</span>
+					<h4>Edileusa Lagácio</h4>
+					<span>Psicóloga</span>
 				</figure>
 				<!-- end single member -->
 
@@ -601,7 +605,7 @@
 						</figcaption>
 					</div>
 					<h4>Maria Márcia</h4>
-					<span>Função a colocar</span>
+					<span>Secretária</span>
 				</figure>
 				<!-- end single member -->
 
@@ -612,25 +616,6 @@
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
 						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-						<figcaption class="overlay">
-							<h5>voluptatem quia voluptas </h5>
-							<p>sit aspernatur aut odit aut fugit,</p>
-							<ul class="social-links text-center">
-								<li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-								<li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-								<li><a href=""><i class="fa-brands fa-google fa-lg"></i></a></li>
-							</ul>
-						</figcaption>
-					</div>
-					<h4>Edileusa Lagácio</h4>
-					<span>Função a colocar</span>
-				</figure>
-				<!-- end single member -->
-
-				<!-- single member -->
-				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-					<div class="member-thumb">
-						<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -649,7 +634,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -660,27 +645,8 @@
 							</ul>
 						</figcaption>
 					</div>
-					<h4>Dr. Antônio</h4>
-					<span>Função a colocar</span>
-				</figure>
-				<!-- end single member -->
-
-				<!-- single member -->
-				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-					<div class="member-thumb">
-						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-						<figcaption class="overlay">
-							<h5>voluptatem quia voluptas </h5>
-							<p>sit aspernatur aut odit aut fugit,</p>
-							<ul class="social-links text-center">
-								<li><a href=""><i class="fa-brands fa-instagram fa-lg"></i></a></li>
-								<li><a href=""><i class="fa-brands fa-facebook fa-lg"></i></a></li>
-								<li><a href=""><i class="fa-brands fa-google fa-lg"></i></a></li>
-							</ul>
-						</figcaption>
-					</div>
-					<h4>Maria Márcia</h4>
-					<span>Função a colocar</span>
+					<h4>Dr. Antônio Gomes</h4>
+					<span>Fonoaudiológo</span>
 				</figure>
 				<!-- end single member -->
 

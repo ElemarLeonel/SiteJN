@@ -125,10 +125,14 @@
                             </div>
 
                             <div class="input-group">
-                                <div class="input-field form-check form-switch">
-                                    <label class="form-check-label" for="houve-internacao">Houve internação?</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="houve-internacao" 
-                                    name="houve-internacao[]">
+                                <div class="input-field">
+                                    <label for="houve-internacao">Houve Internação?*</label>
+                                    <select class="form-select form-control" aria-label="ASO" required id="houve-internacao" 
+                                    name="houve-internacao">
+                                        <option selected disabled>Escolha</option>
+                                        <option value="Sim">Sim</option>
+                                        <option value="Não">Não</option>
+                                    </select>
                                 </div>
                                 <div class="input-field">
                                     <label for="upload-atestado-medico">Atestado Médico*</label>
@@ -190,21 +194,29 @@
                                     placeholder="Digite a quantidade de horas trabalhadas antes do acidente" class="form-control" 
                                     required>
                                 </div>
-                                <div class="input-field form-check form-switch">
-                                    <label class="form-check-label" for="policia-comunicada">A polícia foi comunicada?</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="policia-comunicada" 
+                                <div class="input-field">
+                                    <label for="policia-comunicada">A polícia foi comunicada?*</label>
+                                    <select class="form-select form-control" aria-label="ASO" required id="policia-comunicada" 
                                     name="policia-comunicada">
+                                        <option selected disabled>Escolha</option>
+                                        <option value="Sim">Sim</option>
+                                        <option value="Não">Não</option>
+                                    </select>
                                 </div>
                             </div>
 
                             <div class="input-group">
-                                <div class="input-field form-check form-switch">
-                                    <label class="form-check-label" for="houve-obito">Houve óbito?</label>
-                                    <input class="form-check-input" type="checkbox" role="switch" id="houve-obito" 
+                                <div class="input-field">
+                                    <label for="houve-obito">Houve óbito?*</label>
+                                    <select class="form-select form-control" aria-label="ASO" required id="houve-obito" 
                                     name="houve-obito">
+                                        <option selected disabled>Escolha</option>
+                                        <option value="Sim">Sim</option>
+                                        <option value="Não">Não</option>
+                                    </select>
                                 </div>
                                 <div class="input-field">
-                                    <label for="data-obito" id="data-obito-label">Data do Óbito</label>
+                                    <label for="data-obito" id="data-obito-label">Data do Óbito*</label>
                                     <input type="date" name="data-obito" id="data-obito" class="form-control">
                                 </div>
                             </div>
@@ -225,7 +237,7 @@
                                 </div>
                                 <div class="input-field">
                                     <label for="local-acidente">
-                                        Local Acidente (Ex: Pátio, Rampa de Acesso, Posto de Trabalho...)*
+                                        Local do Acidente (Ex: Pátio, Rampa de Acesso, Posto de Trabalho...)*
                                     </label>
                                     <input type="text" name="local-acidente" id="local-acidente" 
                                     placeholder="Digite o local do acidente" class="form-control" required>
@@ -332,6 +344,12 @@
             $(this).val(currentValue);
         });
 
+        // Máscara para CPF do médico
+        $('#CPF-medico').mask('000.000.000-00', {
+            reverse: true,
+            placeholder: '___.___.___-__'
+        });
+
         // Máscara para Hora Atendimento
         $('#hora-atendimento').mask('00:00');
 
@@ -345,21 +363,12 @@
         $('#cep').mask('00000-000');
         $('#cep').autocompleteAddress();
 
-        // //Campo Houve Internação
-        // $('#houve-internacao').change(function(){
-        //     if($('houve-internacao').is(':checked') == true){
-        //         $('houve-internacao').val('Sim');
-        //     } else {
-        //         $('houve-internacao').val('Não');
-        //     }
-        // })
-
         // Campo Data Óbito Oculto
         $('#data-obito').hide();
         $('#data-obito-label').hide();
-        $('#houve-obito').click(function() {
-            if ($('#houve-obito').is(':checked')) {
-                $('#data-obito').show();
+        $('#houve-obito').change(function() {
+            if ($('#houve-obito option:selected').val() == 'Sim') {
+                $('#data-obito').show().attr("required", "req");
                 $('#data-obito-label').show().attr("required", "req");
             } else {
                 $('#data-obito').hide();

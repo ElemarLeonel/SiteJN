@@ -10,6 +10,14 @@ $mail = new PHPMailer(true);
 
 if(isset($_POST['btnEnviar'])){
 
+    function formatarData($data){
+        if($data == ""){
+            return "Sem data";
+        } else {
+            return date("d-m-Y", strtotime($data));
+        }
+    }
+
     $dir = 'uploads/';
     // Dados da empresa e do colaborador
     $razaoSocial = $_POST['razao-social'];
@@ -26,11 +34,11 @@ if(isset($_POST['btnEnviar'])){
 
 
     // Dados do Atestado
-    $dataAtestado = $_POST['data-atestado'];
+    $dataAtestado = formatarData($_POST['data-atestado']);
     $cid = $_POST['cid'];
     $horaAtendimento = $_POST['hora-atendimento'];
     $quantidadeDiasTratamento = $_POST['quantidade-dias-tratamento'];
-    $houveInternacao = $_POST['houve-internacao'] === true ? 'Sim' : 'Não';
+    $houveInternacao = $_POST['houve-internacao'];
     
 
     if(isset($_FILES['upload-atestado-medico'])){
@@ -42,18 +50,18 @@ if(isset($_POST['btnEnviar'])){
     $nomeMedico = $_POST['nome-medico'];
     $CRMMedico = $_POST['CRM-medico'];
     $CPFMedico = $_POST['CPF-medico'];
-    $dataNascimentoMedico = $_POST['data-nascimento-medico'];
+    $dataNascimentoMedico = formatarData($_POST['data-nascimento-medico']);
 
     // Dados para CAT
-    $dataAcidente = $_POST['data-acidente'];
+    $dataAcidente = formatarData($_POST['data-acidente']);
     $horaAcidente = $_POST['hora-acidente'];
     $quantidadeHorasTrabalhadas = $_POST['quantidade-horas-trabalhadas'];
-    $policiaComunicada = isset($_POST['policia-comunicada']) ? $_POST['policia-comunicada'] : null;
-    $houveObito = isset($_POST['houve-obito']) ? $_POST['houve-obito'] : null;
-    $dataObito = $_POST['data-obito'];
+    $policiaComunicada = $_POST['policia-comunicada'];
+    $houveObito = $_POST['houve-obito'];
+    $dataObito = formatarData($_POST['data-obito']);
     $tipoAmbiente = $_POST['tipo-ambiente'];
     $localAcidente = $_POST['local-acidente'];
-    $CEP = isset($_POST['CEP']) ? $_POST['CEP'] : null;
+    $CEP = $_POST['cep'];
     $cidade = $_POST['cidade'];
     $bairro = $_POST['bairro'];
     $logradouro = $_POST['logradouro'];
@@ -90,19 +98,40 @@ if(isset($_POST['btnEnviar'])){
         $mail->isHTML(true);
         $mail->Subject = 'CAT para envio da '. $razaoSocial . ' ('. $CNPJouCAEPF. ')';
 
-        $mail->Body = '<br> Você recebeu uma CAT da '. $razaoSocial . ' para ser enviado. Confira os dados: <br><br>'
-                    .'<b> Número de protocolo: </b>'. $numeroProtocolo . '<br>'
-                    .'<b> Nome Completo do Colaborador: </b>'. $nomeCompletoColaborador. '<br>'
+        $mail->Body = '<p><br> Você recebeu uma CAT da '. $razaoSocial . ' para ser transmitido. Confira os dados: </p><br><br>'
+                    .'<p><b> Número de protocolo: </b>'. $numeroProtocolo . '</p><br>'
+                    .'<p><b> Nome Completo do Colaborador: </b>'. $nomeCompletoColaborador. '</p><br>'
                     .'<h3> Dados do Atestado Médico </h3><br>'
-                    .'<b> Data do Atestado: </b>'. $dataAtestado . '<br>'
-                    .'<b> CID: </b>'. $cid . '<br>'
-                    .'<b> Hora do Atendimento: </b>'. $horaAtendimento . '<br>'
-                    .'<b> Quantidade de Dias de Tratamento: </b>'. $quantidadeDiasTratamento . '<br>'
-                    .'<b> Houve internação?: </b>'. $houveInternacao . '<br>';
+                    .'<p><b> Data do Atestado: </b>'. $dataAtestado . '</p><br>'
+                    .'<p><b> CID: </b>'. $cid . '</p><br>'
+                    .'<p><b> Hora do Atendimento: </b>'. $horaAtendimento . '</p><br>'
+                    .'<p><b> Quantidade de Dias de Tratamento: </b>'. $quantidadeDiasTratamento . ' dias </p><br>'
+                    .'<p><b> Houve internação?: </b>'. $houveInternacao . '</p><br>'
+                    .'<h3> Dados do Médico </h3><br>'
+                    .'<p><b> Nome: </b>'. $nomeMedico . '</p><br>'
+                    .'<p><b> CRM: </b>'. $CRMMedico . '</p><br>'
+                    .'<p><b> CPF: </b>'. $CPFMedico . '</p><br>'
+                    .'<p><b> Data Nascimento: </b>'. $dataNascimentoMedico . '</p><br>'
+                    .'<h3> Dados para CAT </h3><br>'
+                    .'<p><b> Data do Acidente: </b>'. $dataAcidente . '</p><br>'
+                    .'<p><b> Hora do Acidente: </b>'. $horaAcidente . '</p><br>'
+                    .'<p><b> Quantidade de Horas Trabalhadas: </b>'. $quantidadeHorasTrabalhadas . '</p><br>'
+                    .'<p><b> A polícia foi comunicada?: </b>'. $policiaComunicada . '</p><br>'
+                    .'<p><b> Houve óbito?: </b>'. $houveObito . '</p><br>'
+                    .'<p><b> Data Óbito: </b>'. $dataObito . '</p><br>'
+                    .'<p><b> Tipo do Ambiente: </b>'. $tipoAmbiente . '</p><br>'
+                    .'<p><b> Local do Acidente: </b>'. $localAcidente . '</p><br>'
+                    .'<p><b> CEP: </b>'. $CEP . '</p><br>'
+                    .'<p><b> Cidade: </b>'. $cidade . '</p><br>'
+                    .'<p><b> Bairro: </b>'. $bairro . '</p><br>'
+                    .'<p><b> Logradouro: </b>'. $logradouro . '</p><br>'
+                    .'<p><b> Número: </b>'. $numero . '</p><br>'
+                    .'<p><b> Complemento: </b>'. $complemento . '</p><br>'
+                    .'<p><b> Descrição do Acidente: </b>'. $descricaoAcidente . '</p><br>';
 
         $mail->send();
-        //echo "<script> alert('Requisição realizada com sucesso.\\nGuarde seu número de protocolo: '+ $numeroprotocolo); </script>";
-        //echo "<script> window.location = './cat.php'; </script>";
+        echo "<script> alert('Requisição realizada com sucesso.\\nGuarde seu número de protocolo: '+ $numeroprotocolo); </script>";
+        echo "<script> window.location = './cat.php'; </script>";
 
     } catch (Exception $e){
         echo $e->getMessage();

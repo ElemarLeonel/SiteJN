@@ -46,7 +46,7 @@
 
       
       $mail->setFrom($emailEmpresa, $razaoSocial);
-      $mail->addAddress('elemarleonelbalduino@gmail.com', 'JN');
+      $mail->addAddress('jn_saude@hotmail.com', 'JN');
 
       $mail->isHTML(true);
       $mail->Subject = 'Exame '. $tipoExame. ' da '.$razaosocial. ' ('. $CNPJouCAEPF. ')';
