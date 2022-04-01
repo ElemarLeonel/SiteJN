@@ -380,7 +380,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 					<div class="member-thumb">
-						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/dener.jpg" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -536,7 +536,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+						<img src="img/team/marcelia.jpg" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -675,7 +675,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 						<div class="counters-item">
 							<i class="fa fa-users fa-3x"></i>
-							<strong data-to="350">0</strong>
+							<strong data-to="500">0</strong>
 							<!-- Set Your Number here. i,e. data-to="56" -->
 							<p>Quantidade de Clientes</p>
 						</div>
@@ -683,15 +683,15 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
 						<div class="counters-item">
 							<i class="fa fa-file-medical-alt fa-3x"></i>
-							<strong data-to="550">0</strong>
+							<strong data-to="850">0</strong>
 							<!-- Set Your Number here. i,e. data-to="56" -->
-							<p>Exames Realizados em Janeiro</p>
+							<p>Exames Realizados em Março</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
 						<div class="counters-item">
 							<i class="fa-solid fa-dna fa-3x"></i>
-							<strong data-to="3500">0</strong>
+							<strong data-to="4500">0</strong>
 							<!-- Set Your Number here. i,e. data-to="56" -->
 							<p> Vidas Ativas </p>
 						</div>
@@ -699,7 +699,7 @@
 					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 						<div class="counters-item">
 							<i class="fab fa-youtube fa-3x"></i>
-							<strong data-to="100">0</strong>
+							<strong data-to="10">0</strong>
 							<!-- Set Your Number here. i,e. data-to="56" -->
 							<p>Treinamentos Realizados</p>
 						</div>
