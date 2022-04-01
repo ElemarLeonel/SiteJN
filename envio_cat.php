@@ -28,7 +28,6 @@ if(isset($_POST['btnEnviar'])){
 
     if(isset($_FILES['upload-ficha-registro'])){
         $uploadFichaRegistro = $_FILES['upload-ficha-registro']['name'];
-        $atestadosMedicos = $_FILES['upload-atestado-medico']['tmp_name'];
         move_uploaded_file($_FILES['upload-ficha-registro']['tmp_name'], $dir.$uploadFichaRegistro);
     }
 
@@ -42,7 +41,6 @@ if(isset($_POST['btnEnviar'])){
     
 
     if(isset($_FILES['upload-atestado-medico'])){
-        $uploadAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
         move_uploaded_file(implode("", $_FILES['upload-atestado-medico']['tmp_name']), $dir.$uploadAtestadoMedico);
     }
 
@@ -91,6 +89,8 @@ if(isset($_POST['btnEnviar'])){
         $mail->addAttachment($dir. $uploadFichaRegistro);
 
         $totalAtestadosMedicos = count($_FILES['upload-atestado-medico']['tmp_name']);
+        $atestadosMedicos = $_FILES['upload-atestado-medico']['tmp_name'];
+        $uploadAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
         for($i = 0; $i < $totalAtestadosMedicos; $i++){
             $mail->addAttachment($atestadosMedicos[$i], $uploadAtestadoMedico[$i]);
         }

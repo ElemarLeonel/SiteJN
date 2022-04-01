@@ -129,9 +129,8 @@
                                     <label for="houve-internacao">Houve Internação?*</label>
                                     <select class="form-select form-control" aria-label="ASO" required id="houve-internacao" 
                                     name="houve-internacao">
-                                        <option selected disabled>Escolha</option>
                                         <option value="Sim">Sim</option>
-                                        <option value="Não">Não</option>
+                                        <option value="Não" selected>Não</option>
                                     </select>
                                 </div>
                                 <div class="input-field">
@@ -198,9 +197,8 @@
                                     <label for="policia-comunicada">A polícia foi comunicada?*</label>
                                     <select class="form-select form-control" aria-label="ASO" required id="policia-comunicada" 
                                     name="policia-comunicada">
-                                        <option selected disabled>Escolha</option>
                                         <option value="Sim">Sim</option>
-                                        <option value="Não">Não</option>
+                                        <option value="Não" selected>Não</option>
                                     </select>
                                 </div>
                             </div>
@@ -210,9 +208,8 @@
                                     <label for="houve-obito">Houve óbito?*</label>
                                     <select class="form-select form-control" aria-label="ASO" required id="houve-obito" 
                                     name="houve-obito">
-                                        <option selected disabled>Escolha</option>
                                         <option value="Sim">Sim</option>
-                                        <option value="Não">Não</option>
+                                        <option value="Não" selected>Não</option>
                                     </select>
                                 </div>
                                 <div class="input-field">
@@ -226,8 +223,7 @@
                                     <label for="tipo-ambiente">Tipo do Ambiente*</label>
                                     <select class="form-select form-control" aria-label="ASO" required id="tipo-ambiente" 
                                     name="tipo-ambiente">
-                                        <option selected disabled>Ambiente do acidente</option>
-                                        <option value="Estabelecimento do empregador">Estabelecimento do empregador</option>
+                                        <option value="Estabelecimento do empregador" selected>Estabelecimento do empregador</option>
                                         <option value="Estabelecimento de terceiros">Estabelecimento de terceiros</option>
                                         <option value="Via pública">Via pública</option>
                                         <option value="Área rural">Área rural</option>
