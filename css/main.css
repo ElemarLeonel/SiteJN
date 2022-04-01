@@ -203,10 +203,10 @@ button .icon-menu {
   font-weight: 800;
 }
 
-.carousel-caption h3 {
+.carousel-caption h5 {
   font-size: 48px;
   font-weight: 300;
-  margin: 6px 0 20px;
+  margin: 4px 0 10px;
 }
 
 .carousel-caption p {

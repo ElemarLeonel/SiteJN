@@ -223,8 +223,7 @@
                                     <label for="tipo-ambiente">Tipo do Ambiente*</label>
                                     <select class="form-select form-control" aria-label="ASO" required id="tipo-ambiente" 
                                     name="tipo-ambiente">
-                                        <option selected disabled>Ambiente do acidente</option>
-                                        <option value="Estabelecimento do empregador">Estabelecimento do empregador</option>
+                                        <option value="Estabelecimento do empregador" selected>Estabelecimento do empregador</option>
                                         <option value="Estabelecimento de terceiros">Estabelecimento de terceiros</option>
                                         <option value="Via pública">Via pública</option>
                                         <option value="Área rural">Área rural</option>

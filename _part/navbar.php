@@ -1,6 +1,6 @@
 	<!-- preloader -->
 	<div id="preloader">
-		<img src="img/logotipo_inicio.gif" alt="Preloader">
+		<img src="img/logotipojn.png" alt="Preloader" width="32" height="32">
 	</div>
 	<!-- end preloader -->
 

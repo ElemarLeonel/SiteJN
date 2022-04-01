@@ -49,7 +49,9 @@
 			<div class="carousel-inner">
 
 				<div class="carousel-item active">
-					<img src="img/carousel/curso_empilhadeira_cairu.jpeg" class="d-block w-100 image-carousel" alt="...">
+					<img src="img/carousel/curso_empilhadeira_cairu.jpeg" class="d-block w-100 image-carousel" 
+					alt="Esta é uma foto da aplicação de um treinamento de Operador de Empilhadeira aplicado
+					na empresa Cairu Indústria de Bicicletas">
 					<div class="carousel-caption d-none d-md-block">
 						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Treinamento de Operador de Empilhadeira</h5>
 						<p data-wow-duration="1000ms" class="wow slideInLeft animated">
@@ -60,7 +62,7 @@
 				</div>
 
 				<div class="carousel-item">
-					<img src="img/carousel/curso_primeirossocorros_piarara.jpg" class="d-block w-100 image-carousel" alt="...">
+					<img src="img/carousel/curso_primeirossocorros_piarara.jpg" class="d-block w-100 image-carousel" alt="Esta é uma foto de um treinamento de Primeiros Socorros realizado na Piarara Indústria de Alimentos">
 					<div class="carousel-caption d-none d-md-block">
 						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Treinamento de Primeiros Socorros</h5>
 						<p data-wow-duration="1000ms" class="wow slideInLeft animated">
@@ -70,14 +72,15 @@
 				</div>
 
 				<div class="carousel-item">
-					<img src="img/carousel/sala_tecnica_jn.jpeg" class="d-block w-100 image-carousel" alt="...">
+					<img src="img/carousel/acao_abril_verde_castilho.jpg" class="d-block w-100 image-carousel" alt="Esta é uma foto de uma ação sobre Abril Verde realizada na Castilho Estruturas Metálicas">
 					<div class="carousel-caption d-none d-md-block">
-						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Sala Equipe Técnica JN</h5>
+						<h5 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: white;">Ação Abril Verde Castilho</h5>
 						<p data-wow-duration="1000ms" class="wow slideInLeft animated">
-							Aqui está um dos ambientes da sala técnica da JN.
+							Esta é uma foto de uma ação sobre Abril Verde realizada na Castilho Estruturas Metálicas.
 						</p>
 					</div>
 				</div>
+
 
 			</div>
 
@@ -399,7 +402,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
 					<div class="member-thumb">
-						<img src="img/team/odair.jpg" alt="Team Member" class="img-responsive mw-100 mh-100">
+						<img src="img/team/odair.jpg" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -437,7 +440,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/cleiso.jpg" alt="Team Member" class="img-responsive mw-100 mh-100">
+						<img src="img/team/cleiso.jpg" alt="Team Member" class="img-responsive">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
