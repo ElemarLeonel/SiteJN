@@ -77,8 +77,8 @@ if(isset($_POST['btnEnviar'])){
         $mail->Encoding = 'base64';                                        
         $mail->Host       = 'smtp.mailtrap.io';
         $mail->SMTPAuth   = true;                                   
-        $mail->Username   = '9dec5ba2f4e1c4';                     
-        $mail->Password   = '96250c105ec055';
+        $mail->Username   = '68d10f5d5df184';                     
+        $mail->Password   = '2571d69a982f5e';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                               
         $mail->Port       = 2525;
 
@@ -88,11 +88,11 @@ if(isset($_POST['btnEnviar'])){
 
         $mail->addAttachment($dir. $uploadFichaRegistro);
 
+        $uploadAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
         $totalAtestadosMedicos = count($_FILES['upload-atestado-medico']['tmp_name']);
         $atestadosMedicos = $_FILES['upload-atestado-medico']['tmp_name'];
-        $uploadAtestadoMedico = $_FILES['upload-atestado-medico']['name'];
         for($i = 0; $i < $totalAtestadosMedicos; $i++){
-            $mail->addAttachment($atestadosMedicos[$i], $uploadAtestadoMedico[$i]);
+            $mail->addAttachment($_FILES['upload-atestado-medico']['tmp_name'][$i], $_FILES['upload-atestado-medico']['name'][$i]);
         }
 
         $mail->isHTML(true);
@@ -131,7 +131,7 @@ if(isset($_POST['btnEnviar'])){
 
         $mail->send();
         echo "<script> alert('Requisição realizada com sucesso.\\nGuarde seu número de protocolo: '+ $numeroprotocolo); </script>";
-        echo "<script> window.location = './cat.php'; </script>";
+        //echo "<script> window.location = './cat.php'; </script>";
 
     } catch (Exception $e){
         echo $e->getMessage();
