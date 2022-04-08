@@ -29,8 +29,8 @@
 <body id="body">
 
 	<?php
-	include './_part/links.php';
-	include './_part/navbar.php';
+		include './_part/links.php';
+		include './_part/navbar.php';
 	?>
 	<!--
         Home Slider
@@ -383,7 +383,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 					<div class="member-thumb">
-						<img src="img/team/dener.jpg" alt="Team Member" class="img-responsive">
+						<img src="img/team/dener.jpg" alt="Team Member" class="img-responsive" width="273" height="303">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -402,7 +402,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
 					<div class="member-thumb">
-						<img src="img/team/odair.jpg" alt="Team Member" class="img-responsive">
+						<img src="img/team/odair.jpg" alt="Team Member" class="img-responsive" >
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
@@ -539,7 +539,7 @@
 				<!-- single member -->
 				<figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
 					<div class="member-thumb">
-						<img src="img/team/marcelia.jpg" alt="Team Member" class="img-responsive">
+						<img src="img/team/marcelia.jpg" alt="Team Member" class="img-responsive" width="273" height="303">
 						<figcaption class="overlay">
 							<h5>voluptatem quia voluptas </h5>
 							<p>sit aspernatur aut odit aut fugit,</p>
